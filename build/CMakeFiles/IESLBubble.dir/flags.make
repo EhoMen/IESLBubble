@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/maksim.vozniy.student.linkoping/Documents/IntelTechLan/IESLbubble/include
+CXX_INCLUDES = -I/home/ehomen/IESLBubble/include
 
 CXX_FLAGS = 
 

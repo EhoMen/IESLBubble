@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/maksim.vozniy.student.linkoping/Documents/IntelTechLan/IESLbubble
+CMAKE_SOURCE_DIR = /home/ehomen/IESLBubble
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/maksim.vozniy.student.linkoping/Documents/IntelTechLan/IESLbubble/build
+CMAKE_BINARY_DIR = /home/ehomen/IESLBubble/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -107,9 +107,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksim.vozniy.student.linkoping/Documents/IntelTechLan/IESLbubble/build/CMakeFiles /home/maksim.vozniy.student.linkoping/Documents/IntelTechLan/IESLbubble/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ehomen/IESLBubble/build/CMakeFiles /home/ehomen/IESLBubble/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/maksim.vozniy.student.linkoping/Documents/IntelTechLan/IESLbubble/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ehomen/IESLBubble/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

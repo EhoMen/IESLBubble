@@ -3,15 +3,19 @@ cmake_minimum_required(VERSION 3.16)
 project(IESLBubble_project)
 
 file(GLOB_RECURSE sources scr/main/*.cpp scr/main/*.h)
+file(GLOB_RECURSE templates templates/*)
 
 add_executable(IESLBubble ${sources})
 
 target_include_directories(IESLBubble PUBLIC include/)
 
+file(COPY ${templates} DESTINATION templates)
+
 #find_package(Boost 1.90.0 COMPONENTS filesystem system REQUIRED)
 
 target_link_libraries(IESLBubble PUBLIC
   ${Boost_LIBRARIES}
+  ${sqlite3_LIBRARIES}
   # here you can add any library dependencies
 )
 
