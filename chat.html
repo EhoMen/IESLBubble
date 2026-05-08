@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+  </head>
+  <body>
+    <p id="messages"></p>
+    <input id="input" type="text" placeholder="Type message here" required>
+    <button onclick="addMessage();showMessage();clearInput()">Send</button>
+    <button onclick="showMessage()">Refresh messages</button>
+    <button onclick="saveMessages()">Save</button>
+    <script>
+    var message=localStorage.getItem("messages");
+    var params=new URLSearchParams(window.location.search);
+    var username=params.get("username");
+    function addMessage(){
+    if (document.getElementById("input").value!=""){
+    message+=username+": "+document.getElementById("input").value+"<br>";}}
+    function showMessage(){
+    document.getElementById("messages").innerHTML=message}
+    function clearInput(){
+    document.getElementById("input").value="";}
+    function saveMessages(){
+    localStorage.setItem("messages",message);}
+    </script>
+  </body>
+</html>
