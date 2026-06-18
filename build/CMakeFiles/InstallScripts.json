@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ehomen/IESLBubble/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
